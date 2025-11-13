@@ -40,7 +40,7 @@ def convolve_1d(input_array, kernel_array):
     size = compute_output_size_1d(input_array, kernel_array)
     output_array = np.empty(size)
     for i in range(size): 
-        piece = [i : (i + len(kernel_array)] 
+        piece = [i : (i + len(kernel_array))] 
         output_array[i] = np.dot(piece, kernel_array)
     return output_array
 
